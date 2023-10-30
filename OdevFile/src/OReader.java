@@ -24,7 +24,7 @@ public class OReader {
 
             while ((karakter = reader.read()) != -1) {
                 if (Character.isWhitespace(karakter)) {
-                    // Eğer boşluk karakteri ise, kelimeyi ArrayList'e ekliyoruz.
+                    // Eğer boşluk karakteri ise, kelimeyi ArrayListe ekliyoruz.
                     if (kelime.length() > 0) {
                         kelimeler.add(kelime.toString());
                         // Kelimeyi sıfırlayarak bir sonraki kelimeyi almak için hazır hale getiriyoruz.
@@ -64,7 +64,7 @@ public class OReader {
 
     public static void main(String[] args) {
         try {
-            // OReader sınıfını kullanarak bir örnek oluşturun ve belirtilen dosyayı açıyoruz
+            // OReader sınıfını kullanarak bir örnek oluşturup ve belirtilen dosyayı açıyoruz
         	OReader myReader = new OReader("C:\\Users\\omer\\Desktop\\dosya.txt");
             ArrayList<String> kelimeler = myReader.readWords();
             String satir = myReader.readLineAt(1);
