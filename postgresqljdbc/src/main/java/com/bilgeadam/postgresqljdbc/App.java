@@ -2,9 +2,6 @@ package com.bilgeadam.postgresqljdbc;
 
 import java.sql.SQLException;
 
-import com.bilgeadam.postgresqljdbc.model.DersOgrenci;
-import com.bilgeadam.postgresqljdbc.model.Konu;
-import com.bilgeadam.postgresqljdbc.model.Ogrenci;
 import com.bilgeadam.postgresqljdbc.repository.DersOgrenciRepository;
 import com.bilgeadam.postgresqljdbc.repository.DersRepository;
 import com.bilgeadam.postgresqljdbc.repository.KonuRepository;
