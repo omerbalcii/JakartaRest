@@ -1,43 +1,39 @@
 package com.bilgeadam.postgresqljdbc.model;
 
-public class Konu
-{
+public class Konu {
 	private long ID;
 	private String NAME;
 
-	public Konu()
-	{
+	public Konu() {
 	}
 
-	public Konu(long iD, String nAME)
-	{
+	public Konu(String nAME) {
+		NAME = nAME;
+	}
+
+	public Konu(long iD, String nAME) {
 		ID = iD;
 		NAME = nAME;
 	}
 
-	public long getID()
-	{
+	public long getID() {
 		return ID;
 	}
 
-	public void setID(long iD)
-	{
+	public void setID(long iD) {
 		ID = iD;
 	}
 
-	public String getNAME()
-	{
+	public String getNAME() {
 		return NAME;
 	}
 
-	public void setNAME(String nAME)
-	{
+	public void setNAME(String nAME) {
 		NAME = nAME;
 	}
 
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		return "Konu [ID=" + ID + ", NAME=" + NAME + "]";
 	}
 

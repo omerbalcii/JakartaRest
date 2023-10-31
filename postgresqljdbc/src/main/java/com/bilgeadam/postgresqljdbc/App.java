@@ -25,11 +25,14 @@ public class App
 //		System.err.println(ogretmen_repo.save(new Ogretmen("gökhan", true)));
 			System.err.println(ogretmen_repo.getAll());
 //			System.err.println(ogretmen_repo.getByID(22));
-			//System.err.println(dersogrenci_repo.);
+			System.err.println(dersogrenci_repo.getAll());
 //			System.err.println(ogretmen_repo.deleteByID(7));
-			System.err.println(ders_repo.getAll());
-			System.err.println(ders_repo.getAllDTO());
-			//System.err.println(ogrenci_repo.);
+//			System.err.println(ders_repo.getAll());
+//			System.err.println(ders_repo.getAllDTO());
+			System.err.println(ogrenci_repo.getAll());
+//			System.err.println(konu_repo.getAll());
+			System.err.println(ogretmen_repo.getByID(2));
+			System.err.println(konu_repo.getAll());
 		}
 		catch (SQLException e)
 		{

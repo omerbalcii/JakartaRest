@@ -1,63 +1,52 @@
 package com.bilgeadam.postgresqljdbc.model;
 
-public class Ogretmen
-{
+public class Ogretmen {
 	// DTO, POJO, BEAN, ENTITY, MODEL
 
 	private long ID;
 	private String NAME;
 	private boolean IS_GICIK;
 
-	public Ogretmen()
-	{
+	public Ogretmen() {
 	}
 
-	public Ogretmen(long iD, String nAME, boolean iS_GICIK)
-	{
+	public Ogretmen(long iD, String nAME, boolean iS_GICIK) {
 		ID = iD;
 		NAME = nAME;
 		IS_GICIK = iS_GICIK;
 	}
 
-	public Ogretmen(String nAME, boolean iS_GICIK)
-	{
+	public Ogretmen(String nAME, boolean iS_GICIK) {
 		NAME = nAME;
 		IS_GICIK = iS_GICIK;
 	}
 
-	public long getID()
-	{
+	public long getID() {
 		return ID;
 	}
 
-	public void setID(long iD)
-	{
+	public void setID(long iD) {
 		ID = iD;
 	}
 
-	public String getNAME()
-	{
+	public String getNAME() {
 		return NAME;
 	}
 
-	public void setNAME(String nAME)
-	{
+	public void setNAME(String nAME) {
 		NAME = nAME;
 	}
 
-	public boolean isIS_GICIK()
-	{
+	public boolean isIS_GICIK() {
 		return IS_GICIK;
 	}
 
-	public void setIS_GICIK(boolean iS_GICIK)
-	{
+	public void setIS_GICIK(boolean iS_GICIK) {
 		IS_GICIK = iS_GICIK;
 	}
 
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		return "Ogretmen [ID=" + ID + ", NAME=" + NAME + ", IS_GICIK=" + IS_GICIK + "]";
 	}
 

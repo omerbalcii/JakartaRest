@@ -1,28 +1,32 @@
 package com.bilgeadam.postgresqljdbc.model;
 
 public class DersOgrenci {
-
 	private long ID;
 	private long DERS_ID;
 	private long OGR_ID;
 	private int DEVAMSIZLIK;
 	private int NOTE;
-	
-	
-	public DersOgrenci() 
-	{
-		
+
+	public long getID() {
+		return ID;
 	}
-	
+
+	public DersOgrenci() {
+	}
+
+	public DersOgrenci(long dERS_ID, long oGR_ID, int dEVAMSIZLIK, int nOTE) {
+		DERS_ID = dERS_ID;
+		OGR_ID = oGR_ID;
+		DEVAMSIZLIK = dEVAMSIZLIK;
+		NOTE = nOTE;
+	}
+
 	public DersOgrenci(long iD, long dERS_ID, long oGR_ID, int dEVAMSIZLIK, int nOTE) {
 		ID = iD;
 		DERS_ID = dERS_ID;
 		OGR_ID = oGR_ID;
 		DEVAMSIZLIK = dEVAMSIZLIK;
 		NOTE = nOTE;
-	}
-	public long getID() {
-		return ID;
 	}
 
 	public void setID(long iD) {
@@ -61,5 +65,9 @@ public class DersOgrenci {
 		NOTE = nOTE;
 	}
 
-	
+	@Override
+	public String toString() {
+		return "DersOgrenci [ID=" + ID + ", DERS_ID=" + DERS_ID + ", OGR_ID=" + OGR_ID + ", DEVAMSIZLIK=" + DEVAMSIZLIK
+				+ ", NOTE=" + NOTE + "]";
+	}
 }
