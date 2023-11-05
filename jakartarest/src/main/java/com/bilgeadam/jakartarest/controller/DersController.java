@@ -117,30 +117,5 @@ public class DersController {
         }
     }
 
-    @POST
-    @Path("/savedto")
-    @Consumes(MediaType.APPLICATION_JSON)
-    public Response saveDTO(DersDTO dersDto) {
-        try {
-            if (repo.saveDTO(dersDto)) {
-                return Response.status(Status.CREATED).entity("Başarı ile kaydedildi").build();
-            } else {
-                return Response.serverError().entity("Başarı ile kaydedilemedi").build();
-            }
-        } catch (Exception e) {
-            return Response.serverError().entity("Bir hata oluştu -> " + e.getClass()).build();
-        }
-    }
-
-    @GET
-    @Path("/getalldto")
-    @Produces(MediaType.APPLICATION_JSON)
-    public Response getAllDTO() {
-        try {
-            ArrayList<DersDTO> result = repo.getAllDTO();
-            return Response.ok().entity(result).build();
-        } catch (Exception e) {
-            return Response.serverError().entity("Bir hata oluştu").build();
-        }
-    }
+ 
 }
