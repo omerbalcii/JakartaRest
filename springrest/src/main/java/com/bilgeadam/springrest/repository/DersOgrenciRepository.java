@@ -80,16 +80,14 @@ public class DersOgrenciRepository
 		return dersOgrenci;
 	}
 
-	public boolean save(DersOgrenci dogrn)
+	public boolean save(DersOgrenci Dogr)
 	{
-		String sql = "insert into \"public\".\"DERS_OGRENCI\"(\"DERS_ID\", \"OGRENCI_ID\",\"DEVAMSIZLIK\",\"NOTE\") values (:DERSID, :OGRENCIID, :DEVAMSIZLIK, :NOTE)";
-
+		String sql = "INSERT INTO \"public\".\"DERS_OGRENCI\"(\"DERS_ID\", \"OGR_ID\", \"DEVAMSIZLIK\", \"NOTE\")VALUES  (:NAME, :OGR_ID,:DEVAMSIZLIK,:NOTE)";
 		Map<String, Object> paramMap = new HashMap<>();
-		paramMap.put("DERSID", dogrn.getDERS_ID());
-		paramMap.put("OGRENCIID", dogrn.getOGR_ID());
-		paramMap.put("DEVAMSIZLIK", dogrn.getDEVAMSIZLIK());
-		paramMap.put("NOTE", dogrn.getNOTE());
- 
+		paramMap.put("NAME", Dogr.getDERS_ID());
+		paramMap.put("NAME", Dogr.getOGR_ID());
+		paramMap.put("NAME", Dogr.getDEVAMSIZLIK());
+		paramMap.put("NAME", Dogr.getNOTE());
 		return namedParameterJdbcTemplate.update(sql, paramMap) == 1;
 	}
 
