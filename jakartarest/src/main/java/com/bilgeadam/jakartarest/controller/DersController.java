@@ -4,7 +4,6 @@ package com.bilgeadam.jakartarest.controller;
 import java.util.ArrayList;
 
 import com.bilgeadam.jakartarest.model.Ders;
-import com.bilgeadam.jakartarest.model.DersDTO;
 import com.bilgeadam.jakartarest.repository.DersRepository;
 
 import jakarta.ejb.Singleton;
