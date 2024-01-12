@@ -30,7 +30,7 @@ public class OgretmenController
 		this.ogretmenRepository = ogretmenRepository;
 	}
 
-	@PostMapping(path = "save", consumes = MediaType.APPLICATION_JSON_VALUE)
+@PostMapping(path = "save", consumes = MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<String> save(@RequestBody Ogretmen ogr)
 	{
 		// localhost:8080/springrest/ogretmen/save

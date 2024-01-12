@@ -134,9 +134,9 @@ public class DersController
 	}
 
 	@GetMapping(path = "getall", produces = MediaType.APPLICATION_JSON_VALUE)
-	public ResponseEntity<List<Ders>> hellospring()
+	public ResponseEntity<List<Ders>> getall()
 	{
-		// localhost:8080/springrest/Ders/getall
+		// localhost:8080/springrest/ders/getall
 		try
 		{
 			return ResponseEntity.ok(dersRepository.getAll());
